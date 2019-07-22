@@ -1,2 +1,2 @@
 # base_installation
-installation of basic software for new machines
+installation of basic software for new machines via playbook
