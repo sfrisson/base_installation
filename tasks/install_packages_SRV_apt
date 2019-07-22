@@ -1,0 +1,12 @@
+- name: ensure a list of packages installed
+  apt-get:
+    name: "{{ packages }}"
+  vars:
+    packages:
+    - vim
+    - htop
+    - iotop 
+    - curl
+    - net-tools
+  
+    state: present
