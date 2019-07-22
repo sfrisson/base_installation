@@ -1,0 +1,16 @@
+- name: ensure a list of packages installed
+  yum:
+    name: "{{ packages }}"
+  vars:
+    packages:
+    - vim
+    - htop
+    - iotop 
+    - wget
+    - firefox
+    - timeshift
+    - vlc
+    - shutter
+    - ranger
+  
+    state: present
