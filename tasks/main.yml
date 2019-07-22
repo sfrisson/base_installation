@@ -1,0 +1,14 @@
+- name: ensure a list of packages installed
+  yum:
+    name: "{{ packages }}"
+  vars:
+    packages:
+    - vim
+    - htop
+    - iotop 
+    - wget
+  
+- name: "install chrome from RPM"
+  yum:
+    name: /home/ansible/software/google-chrome-stable_current_x86_64.rpm
+    state: present
